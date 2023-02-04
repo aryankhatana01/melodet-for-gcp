@@ -1,2 +1,5 @@
-runtime: python310
+runtime: python39
 entrypoint: cd api/ && python3 -m uvicorn api:app
+resources:
+  memory_gb: 16
+  disk_size_gb: 15
